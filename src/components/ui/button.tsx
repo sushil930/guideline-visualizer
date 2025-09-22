@@ -15,11 +15,18 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Gamified Learning Platform Variants
+        hero: "gradient-primary text-white shadow-card hover:shadow-card-hover transition-spring",
+        student: "gradient-secondary text-white shadow-student hover:shadow-card-hover transition-spring",
+        success: "bg-success text-white hover:bg-success/90 shadow-card transition-smooth",
+        warning: "bg-warning text-black hover:bg-warning/90 shadow-card transition-smooth",
+        danger: "bg-danger text-white hover:bg-danger/90 shadow-card transition-smooth",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-10 text-base",
         icon: "h-10 w-10",
       },
     },
