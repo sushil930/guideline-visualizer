@@ -2,14 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts';
-import { Users, BookOpen, TrendingUp, Download, Award, Target, Activity } from 'lucide-react';
+import { Users, Leaf, TrendingUp, Download, Award, Target, Activity, TreePine, Recycle } from 'lucide-react';
 
 const TeacherDashboard = () => {
   const classPerformanceData = [
-    { subject: 'Math', average: 85, completed: 45, total: 50 },
-    { subject: 'Science', average: 78, completed: 42, total: 50 },
-    { subject: 'Physics', average: 72, completed: 38, total: 50 },
-    { subject: 'Chemistry', average: 68, completed: 35, total: 50 },
+    { subject: 'Climate Science', average: 85, completed: 45, total: 50 },
+    { subject: 'Renewable Energy', average: 78, completed: 42, total: 50 },
+    { subject: 'Biodiversity', average: 72, completed: 38, total: 50 },
+    { subject: 'Sustainability', average: 68, completed: 35, total: 50 },
   ];
 
   const progressData = [
@@ -46,13 +46,13 @@ const TeacherDashboard = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">
-              Teacher <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Dashboard</span>
+              Educator <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Dashboard</span>
             </h1>
-            <p className="text-muted-foreground text-lg">Monitor student progress and class performance</p>
+            <p className="text-muted-foreground text-lg">Monitor student environmental learning progress and eco-impact</p>
           </div>
           <Button className="gradient-secondary hover:shadow-card-hover transition-spring mt-4 md:mt-0">
             <Download className="mr-2 h-4 w-4" />
-            Export Report
+            Export Eco-Impact Report
           </Button>
         </div>
 
@@ -64,34 +64,34 @@ const TeacherDashboard = () => {
                 <Users className="h-6 w-6 text-primary" />
               </div>
               <div className="text-2xl font-bold text-primary">50</div>
-              <div className="text-sm text-muted-foreground">Total Students</div>
+              <div className="text-sm text-muted-foreground">Eco-Explorers</div>
             </CardContent>
           </Card>
 
           <Card className="shadow-card hover:shadow-card-hover transition-spring border-success/20">
             <CardContent className="p-6 text-center">
               <div className="h-12 w-12 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="h-6 w-6 text-success" />
+                <TreePine className="h-6 w-6 text-success" />
               </div>
               <div className="text-2xl font-bold text-success">85%</div>
-              <div className="text-sm text-muted-foreground">Avg Completion</div>
+              <div className="text-sm text-muted-foreground">Challenge Completion</div>
             </CardContent>
           </Card>
 
           <Card className="shadow-card hover:shadow-card-hover transition-spring border-warning/20">
             <CardContent className="p-6 text-center">
               <div className="h-12 w-12 rounded-full bg-warning/10 flex items-center justify-center mx-auto mb-4">
-                <Target className="h-6 w-6 text-warning" />
+                <Leaf className="h-6 w-6 text-warning" />
               </div>
               <div className="text-2xl font-bold text-warning">78%</div>
-              <div className="text-sm text-muted-foreground">Avg Score</div>
+              <div className="text-sm text-muted-foreground">Avg Eco-Score</div>
             </CardContent>
           </Card>
 
           <Card className="shadow-card hover:shadow-card-hover transition-spring border-info/20">
             <CardContent className="p-6 text-center">
               <div className="h-12 w-12 rounded-full bg-info/10 flex items-center justify-center mx-auto mb-4">
-                <Activity className="h-6 w-6 text-info" />
+                <Recycle className="h-6 w-6 text-info" />
               </div>
               <div className="text-2xl font-bold text-info">92%</div>
               <div className="text-sm text-muted-foreground">Active This Week</div>
@@ -216,8 +216,8 @@ const TeacherDashboard = () => {
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button variant="outline" className="w-full justify-start">
-                  <BookOpen className="mr-2 h-4 w-4" />
-                  Create New Quiz
+                  <Leaf className="mr-2 h-4 w-4" />
+                  Create New Eco-Challenge
                 </Button>
                 <Button variant="outline" className="w-full justify-start">
                   <Users className="mr-2 h-4 w-4" />

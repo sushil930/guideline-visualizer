@@ -3,26 +3,26 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import { Award, BookOpen, Trophy, Star, Play, CheckCircle, Clock, Zap } from 'lucide-react';
+import { Award, Leaf, Trophy, Star, Play, CheckCircle, Clock, Recycle, TreePine, Globe } from 'lucide-react';
 
 const StudentDashboard = () => {
   const [completedQuizzes] = useState([
-    { id: 1, title: 'Basic Math', score: 85, completed: true },
-    { id: 2, title: 'Science Basics', score: 92, completed: true },
-    { id: 3, title: 'Physics Fun', score: 78, completed: true },
+    { id: 1, title: 'Climate Change Basics', score: 85, completed: true },
+    { id: 2, title: 'Renewable Energy', score: 92, completed: true },
+    { id: 3, title: 'Ecosystem Conservation', score: 78, completed: true },
   ]);
 
   const [availableQuizzes] = useState([
-    { id: 4, title: 'Chemistry Adventure', difficulty: 'Medium', estimatedTime: '15 min' },
-    { id: 5, title: 'Biology Basics', difficulty: 'Easy', estimatedTime: '10 min' },
-    { id: 6, title: 'Advanced Math', difficulty: 'Hard', estimatedTime: '20 min' },
+    { id: 4, title: 'Waste Management Challenge', difficulty: 'Medium', estimatedTime: '15 min' },
+    { id: 5, title: 'Biodiversity Basics', difficulty: 'Easy', estimatedTime: '10 min' },
+    { id: 6, title: 'Carbon Footprint Calculator', difficulty: 'Hard', estimatedTime: '20 min' },
   ]);
 
   const [badges] = useState([
-    { id: 1, name: 'Math Master', type: 'gold', description: 'Completed 10 math quizzes' },
-    { id: 2, name: 'Science Explorer', type: 'silver', description: 'Completed 5 science quizzes' },
-    { id: 3, name: 'Quick Learner', type: 'bronze', description: 'Completed first quiz' },
-    { id: 4, name: 'Consistent', type: 'silver', description: '7-day learning streak' },
+    { id: 1, name: 'Climate Champion', type: 'gold', description: 'Completed 10 climate quests' },
+    { id: 2, name: 'Eco Warrior', type: 'silver', description: 'Completed 5 sustainability challenges' },
+    { id: 3, name: 'Green Starter', type: 'bronze', description: 'Started your eco-journey' },
+    { id: 4, name: 'Earth Guardian', type: 'silver', description: '7-day eco-streak' },
   ]);
 
   const getBadgeColor = (type: string) => {
@@ -49,9 +49,9 @@ const StudentDashboard = () => {
         {/* Welcome Section */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">
-            Welcome back, <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Student!</span>
+            Welcome back, <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">Eco-Explorer!</span>
           </h1>
-          <p className="text-muted-foreground text-lg">Continue your learning journey and earn amazing badges!</p>
+          <p className="text-muted-foreground text-lg">Continue your environmental journey and earn green badges for sustainability!</p>
         </div>
 
         {/* Stats Cards */}
@@ -59,10 +59,10 @@ const StudentDashboard = () => {
           <Card className="shadow-student hover:shadow-card-hover transition-spring">
             <CardContent className="p-6 text-center">
               <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <Trophy className="h-6 w-6 text-primary" />
+                <Leaf className="h-6 w-6 text-primary" />
               </div>
               <div className="text-2xl font-bold text-primary">1,250</div>
-              <div className="text-sm text-muted-foreground">Total Points</div>
+              <div className="text-sm text-muted-foreground">Eco-Points</div>
             </CardContent>
           </Card>
 
@@ -72,27 +72,27 @@ const StudentDashboard = () => {
                 <CheckCircle className="h-6 w-6 text-success" />
               </div>
               <div className="text-2xl font-bold text-success">{completedQuizzes.length}</div>
-              <div className="text-sm text-muted-foreground">Completed</div>
+              <div className="text-sm text-muted-foreground">Challenges Done</div>
             </CardContent>
           </Card>
 
           <Card className="shadow-student hover:shadow-card-hover transition-spring">
             <CardContent className="p-6 text-center">
               <div className="h-12 w-12 rounded-full bg-warning/10 flex items-center justify-center mx-auto mb-4">
-                <Star className="h-6 w-6 text-warning" />
+                <Trophy className="h-6 w-6 text-warning" />
               </div>
               <div className="text-2xl font-bold text-warning">{badges.length}</div>
-              <div className="text-sm text-muted-foreground">Badges Earned</div>
+              <div className="text-sm text-muted-foreground">Green Badges</div>
             </CardContent>
           </Card>
 
           <Card className="shadow-student hover:shadow-card-hover transition-spring">
             <CardContent className="p-6 text-center">
               <div className="h-12 w-12 rounded-full bg-info/10 flex items-center justify-center mx-auto mb-4">
-                <Zap className="h-6 w-6 text-info" />
+                <Recycle className="h-6 w-6 text-info" />
               </div>
               <div className="text-2xl font-bold text-info">7</div>
-              <div className="text-sm text-muted-foreground">Day Streak</div>
+              <div className="text-sm text-muted-foreground">Day Eco-Streak</div>
             </CardContent>
           </Card>
         </div>
@@ -103,8 +103,8 @@ const StudentDashboard = () => {
             <Card className="shadow-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Play className="h-5 w-5 text-primary" />
-                  Available Quizzes
+                  <Globe className="h-5 w-5 text-primary" />
+                  Available Eco-Challenges
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -125,7 +125,7 @@ const StudentDashboard = () => {
                           </div>
                         </div>
                         <Button className="gradient-primary hover:shadow-card-hover transition-spring">
-                          Start Quiz
+                          Start Challenge
                         </Button>
                       </div>
                     </CardContent>
@@ -138,28 +138,28 @@ const StudentDashboard = () => {
             <Card className="shadow-card mt-6">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <BookOpen className="h-5 w-5 text-secondary" />
-                  Learning Progress
+                  <TreePine className="h-5 w-5 text-secondary" />
+                  Environmental Learning Progress
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
                   <div className="flex justify-between text-sm mb-2">
-                    <span>Mathematics</span>
+                    <span>Climate Science</span>
                     <span className="text-success">85%</span>
                   </div>
                   <Progress value={85} className="h-3" />
                 </div>
                 <div>
                   <div className="flex justify-between text-sm mb-2">
-                    <span>Science</span>
+                    <span>Renewable Energy</span>
                     <span className="text-success">72%</span>
                   </div>
                   <Progress value={72} className="h-3" />
                 </div>
                 <div>
                   <div className="flex justify-between text-sm mb-2">
-                    <span>Physics</span>
+                    <span>Sustainable Living</span>
                     <span className="text-warning">45%</span>
                   </div>
                   <Progress value={45} className="h-3" />
@@ -175,7 +175,7 @@ const StudentDashboard = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Award className="h-5 w-5 text-warning" />
-                  Your Badges
+                  Your Green Badges
                 </CardTitle>
               </CardHeader>
               <CardContent>

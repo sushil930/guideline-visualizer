@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, BookOpen } from 'lucide-react';
+import { Menu, X, Leaf } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -13,8 +13,6 @@ const Header = () => {
     { path: '/', label: 'Home' },
     { path: '/student', label: 'Student' },
     { path: '/teacher', label: 'Teacher' },
-    { path: '/roadmap', label: 'Roadmap' },
-    { path: '/flowchart', label: 'Flowchart' },
   ];
 
   return (
@@ -24,14 +22,14 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 transition-spring hover:scale-105">
             <div className="h-10 w-10 rounded-full gradient-primary flex items-center justify-center shadow-card">
-              <BookOpen className="h-6 w-6 text-white" />
+              <Leaf className="h-6 w-6 text-white" />
             </div>
             <div className="hidden sm:block">
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-                GameLearn
+                ReLeaf
               </span>
               <div className="text-xs text-muted-foreground -mt-1">
-                Rural Education Platform
+                Environmental Education Platform
               </div>
             </div>
           </Link>

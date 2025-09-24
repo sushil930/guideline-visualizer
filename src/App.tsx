@@ -7,8 +7,6 @@ import Header from "./components/Header";
 import Landing from "./pages/Landing";
 import StudentDashboard from "./pages/StudentDashboard";
 import TeacherDashboard from "./pages/TeacherDashboard";
-import RoadmapPage from "./pages/RoadmapPage";
-import FlowchartPage from "./pages/FlowchartPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,8 +24,6 @@ const App = () => (
               <Route path="/" element={<Landing />} />
               <Route path="/student" element={<StudentDashboard />} />
               <Route path="/teacher" element={<TeacherDashboard />} />
-              <Route path="/roadmap" element={<RoadmapPage />} />
-              <Route path="/flowchart" element={<FlowchartPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
