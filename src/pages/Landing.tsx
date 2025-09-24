@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Leaf, Users, Award, BookOpen, Target, Zap, Recycle, TreePine } from 'lucide-react';
+import { Leaf, Users, Award, BookOpen, Target, Zap, Recycle, TreePine, Globe } from 'lucide-react';
 import heroImage from '@/assets/hero-environmental-learning.jpg';
 import environmentalIcons from '@/assets/environmental-icons.jpg';
 
