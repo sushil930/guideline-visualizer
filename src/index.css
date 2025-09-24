@@ -23,20 +23,20 @@ Colors inspired by nature: greens, blues, and earthy tones
     --popover: 0 0% 100%;
     --popover-foreground: 120 25% 15%;
 
-    /* Primary - Forest Green */
-    --primary: 122 39% 32%;        /* #2E7D32 - Deep green */
-    --primary-light: 122 43% 55%;  /* #66BB6A - Light green */
+    /* Primary - Forest Green Theme */
+    --primary: 142 76% 36%;        /* Forest Green - Main brand color */
+    --primary-light: 142 69% 58%;  /* Lighter green variant */
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Ocean Blue */
-    --secondary: 207 77% 39%;      /* #1565C0 - Deep blue */
+    /* Secondary - Earth Orange */
+    --secondary: 25 95% 53%;       /* Warm Orange - Earth tone */
     --secondary-foreground: 0 0% 100%;
 
-    /* Support Colors */
-    --success: 122 43% 55%;        /* #66BB6A - Light green */
-    --warning: 45 93% 47%;         /* #F57F17 - Amber */
-    --danger: 348 83% 47%;         /* #F43F5E - Red */
-    --info: 207 77% 59%;           /* #42A5F5 - Light blue */
+    /* Support Colors - Environmental Palette */
+    --success: 120 60% 50%;        /* Bright Green - For achievements */
+    --warning: 45 93% 47%;         /* Amber - Solar energy color */
+    --danger: 0 65% 51%;           /* Muted Red - For alerts */
+    --info: 199 89% 48%;           /* Sky Blue - For water/air themes */
 
     /* Gamification Colors - Nature inspired */
     --gold: 45 100% 51%;           /* Sun gold */
@@ -60,10 +60,10 @@ Colors inspired by nature: greens, blues, and earthy tones
 
     --radius: 0.75rem;
 
-    /* Environmental Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(122 39% 32%), hsl(122 43% 55%));     /* Forest to light green */
-    --gradient-secondary: linear-gradient(135deg, hsl(207 77% 39%), hsl(207 77% 59%));   /* Deep to light blue */
-    --gradient-hero: linear-gradient(135deg, hsl(122 39% 32%) 0%, hsl(207 77% 39%) 100%); /* Green to blue */
+    /* Gradients - Environmental Color Effects */
+    --gradient-primary: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(142, 69%, 58%));
+    --gradient-secondary: linear-gradient(135deg, hsl(25, 95%, 53%), hsl(45, 93%, 47%));
+    --gradient-hero: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(199, 89%, 48%) 100%);
     
     /* Nature-inspired Shadows */
     --shadow-card: 0 4px 6px -1px hsl(122 39% 32% / 0.1), 0 2px 4px -1px hsl(122 39% 32% / 0.06);
@@ -100,20 +100,20 @@ Colors inspired by nature: greens, blues, and earthy tones
     --popover: 120 25% 10%;
     --popover-foreground: 120 20% 95%;
 
-    /* Primary - Brighter greens for dark mode */
-    --primary: 122 43% 65%;        /* Brighter green for dark mode */
-    --primary-light: 122 50% 70%;  
-    --primary-foreground: 120 25% 8%;
+    /* Primary - Keeping environmental colors for dark mode */
+    --primary: 142 69% 58%;        /* Lighter forest green for dark mode */
+    --primary-light: 142 60% 70%;  
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    /* Secondary - Brighter blue for dark mode */
-    --secondary: 207 77% 65%;      /* Brighter blue */
-    --secondary-foreground: 120 25% 8%;
+    /* Secondary - Earth Orange */
+    --secondary: 25 95% 58%;
+    --secondary-foreground: 222.2 84% 4.9%;
 
-    /* Support Colors - Adjusted for dark mode */
-    --success: 122 50% 60%;
-    --warning: 45 93% 60%;
-    --danger: 348 83% 60%;
-    --info: 207 77% 65%;
+    /* Support Colors - Environmental Palette */
+    --success: 120 60% 55%;
+    --warning: 45 93% 55%;
+    --danger: 0 65% 55%;
+    --info: 199 89% 55%;
 
     /* Gamification Colors */
     --gold: 45 100% 60%;
