@@ -23,20 +23,20 @@ Colors optimized for accessibility and rural device displays
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary - Indigo/Purple Gradient */
-    --primary: 238 69% 60%;        /* #4F46E5 - Indigo */
-    --primary-light: 262 73% 57%;  /* #9333EA - Purple */
+    /* Primary - Forest Green Theme */
+    --primary: 142 76% 36%;        /* Forest Green - Main brand color */
+    --primary-light: 142 69% 58%;  /* Lighter green variant */
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Emerald Green */
-    --secondary: 158 64% 52%;      /* #10B981 - Emerald */
+    /* Secondary - Earth Orange */
+    --secondary: 25 95% 53%;       /* Warm Orange - Earth tone */
     --secondary-foreground: 0 0% 100%;
 
-    /* Support Colors */
-    --success: 158 64% 52%;        /* #10B981 - Emerald Green */
-    --warning: 48 96% 53%;         /* #FACC15 - Yellow */
-    --danger: 348 83% 47%;         /* #F43F5E - Red */
-    --info: 221 83% 53%;           /* #3B82F6 - Blue */
+    /* Support Colors - Environmental Palette */
+    --success: 120 60% 50%;        /* Bright Green - For achievements */
+    --warning: 45 93% 47%;         /* Amber - Solar energy color */
+    --danger: 0 65% 51%;           /* Muted Red - For alerts */
+    --info: 199 89% 48%;           /* Sky Blue - For water/air themes */
 
     /* Gamification Colors */
     --gold: 45 93% 58%;            /* Gold badge */
@@ -60,10 +60,10 @@ Colors optimized for accessibility and rural device displays
 
     --radius: 0.75rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(158 64% 42%));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
+    /* Gradients - Environmental Color Effects */
+    --gradient-primary: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(142, 69%, 58%));
+    --gradient-secondary: linear-gradient(135deg, hsl(25, 95%, 53%), hsl(45, 93%, 47%));
+    --gradient-hero: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(199, 89%, 48%) 100%);
     
     /* Shadows */
     --shadow-card: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -1px hsl(var(--primary) / 0.06);
@@ -100,20 +100,20 @@ Colors optimized for accessibility and rural device displays
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    /* Primary - Keeping same brand colors */
-    --primary: 238 69% 65%;        /* Slightly lighter for dark mode */
-    --primary-light: 262 73% 62%;  
+    /* Primary - Keeping environmental colors for dark mode */
+    --primary: 142 69% 58%;        /* Lighter forest green for dark mode */
+    --primary-light: 142 60% 70%;  
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    /* Secondary - Emerald Green */
-    --secondary: 158 64% 52%;
+    /* Secondary - Earth Orange */
+    --secondary: 25 95% 58%;
     --secondary-foreground: 222.2 84% 4.9%;
 
-    /* Support Colors */
-    --success: 158 64% 52%;
-    --warning: 48 96% 53%;
-    --danger: 348 83% 47%;
-    --info: 221 83% 53%;
+    /* Support Colors - Environmental Palette */
+    --success: 120 60% 55%;
+    --warning: 45 93% 55%;
+    --danger: 0 65% 55%;
+    --info: 199 89% 55%;
 
     /* Gamification Colors */
     --gold: 45 93% 58%;
